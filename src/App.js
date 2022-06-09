@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import Konva from './Konva';
 import Uploader from './Uploader';
