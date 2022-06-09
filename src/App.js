@@ -20,8 +20,4 @@ function App() {
   );
 }
 
-// 1. should upload image
-// 2. should drag and drop shape
-// 3. should store shape location and load its location
-
 export default App;
