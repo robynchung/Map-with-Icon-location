@@ -3,6 +3,9 @@ import { Stage, Layer } from 'react-konva';
 
 import Icon from './Icon';
 
+// styles
+import StageWrapper from './styles/StageWrapper';
+
 function KonvaTest() {
   const [selectedId, selectShape] = React.useState(null);
   const [stage, setStage] = React.useState(0);
@@ -21,10 +24,7 @@ function KonvaTest() {
   };
 
   return (
-    <div
-      id="stage-parent"
-      style={{ width: '100vw', height: '100vh', border: 'solid 1px #000' }}
-    >
+    <StageWrapper id="stage-parent">
       {/* map */}
       <Stage
         width={stage.offsetWidth}
@@ -46,7 +46,7 @@ function KonvaTest() {
           />
         </Layer>
       </Stage>
-    </div>
+    </StageWrapper>
   );
 }
 
