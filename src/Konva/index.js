@@ -6,7 +6,7 @@ import Icon from './Icon';
 // styles
 import StageWrapper from './styles/StageWrapper';
 
-function KonvaTest() {
+function KonvaTest({ bg }) {
   const [selectedId, selectShape] = React.useState(null);
   const [stage, setStage] = React.useState(0);
 
@@ -32,7 +32,7 @@ function KonvaTest() {
         onMouseDown={checkDeselect}
         onTouchStart={checkDeselect}
         style={{
-          backgroundImage: `url('https://www.mcmaster.ca/uts/maps/images/etb5.gif')`,
+          backgroundImage: `url('${bg}')`,
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat'
         }}
